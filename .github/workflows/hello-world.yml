@@ -15,3 +15,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./
+
+      - name: push changes to remote
+        run: |
+          git config --global user.name "user mane"
+          git config --global user.email "user email"
+
+          git add -A git commit -m "Update test.txt"
+          git push

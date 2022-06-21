@@ -7,10 +7,10 @@ name: hello-world
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
     branches:
-      - main
+      - master
 
 # задача
 jobs:

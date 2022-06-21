@@ -1,16 +1,33 @@
+# https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions
+# имя action
 name: hello-world
 
-on: [push, pull_request]
+# выполнять при условии пуша в ветку master
+# on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
+# задача
 jobs:
+  # имя задачи
   hello-world-job:
+    # запустить на сервере
     runs-on: ubuntu-latest
 
+    # шаги
     steps:
+      # сторонний action, проверяет репозиторий
       - uses: actions/checkout@v3
+      # текущая директория с action
       - uses: ./
 
-      - name: push changes to remote
+      # многострочная команда (ставим вертикальный слеш) для пуша изменений в мастер репозитория
+      - name: update file and push to remote
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"

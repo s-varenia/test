@@ -1,0 +1,7 @@
+name: 'Hello World'
+description: 'My description'
+author: 'VA'
+
+runs:
+  using: 'node14'
+  main: 'index.js'

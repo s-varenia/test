@@ -3,5 +3,5 @@ description: 'My description'
 author: 'VA'
 
 runs:
-  using: 'node12'
+  using: 'node16'
   main: 'index.js'

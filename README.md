@@ -23,4 +23,6 @@ git checkout --orphan foo
 git rm --cached $(git ls-files)
 ```
 
+Do not delete `.git` folder
+
 [stackoverflow.com](https://stackoverflow.com/a/11487993)

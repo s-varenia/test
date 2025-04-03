@@ -1,0 +1,22 @@
+# Зависимости Node.js
+node_modules/
+
+# Локальные файлы Wrangler
+.wrangler/
+dist/
+
+# Логи и временные файлы
+*.log
+*.log.*
+
+# Файлы редакторов
+.vscode/
+.idea/
+
+# Локальные файлы окружения
+.env
+.env.local
+
+# Служебные файлы macOS и Windows
+.DS_Store
+Thumbs.db

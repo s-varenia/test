@@ -16,6 +16,7 @@ dist/
 # Локальные файлы окружения
 .env
 .env.local
+.dev.vars
 
 # Служебные файлы macOS и Windows
 .DS_Store
